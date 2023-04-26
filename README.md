@@ -3,6 +3,6 @@
 &nbsp;
 <p>Project developed by:</p>
 <ul>
-<li>Marcos García Lamas -> </li>
-<li>Ángel González Sanlés -> </li>
+<li>Marcos García Lamas</li>
+<li>Ángel González Sanlés</li>
 </ul>
