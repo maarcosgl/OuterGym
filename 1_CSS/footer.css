@@ -1,0 +1,188 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    background-color: rgba(11, 11, 11, 0.418);  
+    border-style: none;
+    z-index: 1;
+
+}
+
+.logos{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+}
+
+#socialNetwork{
+    align-self: center;
+    list-style: none;
+    gap: 60px;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    border-style: none;  
+}
+
+
+#socialNetwork >li{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 1%;
+    border-style: none;
+    border-radius: 10px;
+    height: 100%;
+}
+
+#socialNetwork > li > a{
+    text-decoration: none;
+    color: white;
+    border-style: none;
+}
+
+#socialNetwork li:hover{
+    background-color: rgb(228, 220, 0);
+}
+
+#socialNetwork li:hover a{
+    color: black;
+}
+
+#sameLine{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: solid;
+    border-top-color: blue;
+}
+
+#faqs{
+    margin-left: auto;
+    align-self: flex-start;
+    text-align: center;
+    width: 15%;
+    margin-right: 2%;
+    padding: 0.5%;
+    background-color: yellow;
+    color: blue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: solid;
+    border-color:black;
+    border-top-color: transparent;
+    font-weight: bolder;
+}
+
+#faqs:hover{
+    background-color: rgb(228, 220, 0);
+}
+
+.Bandera{
+    width: 30px;
+    height: 20px;
+    margin-left: auto;
+}
+
+#idiomas{
+    padding: 0 10px;
+    margin: 0%;
+    margin-left: 2%;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    background-color: yellow;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: solid;
+    border-color:yellow;
+}
+
+#idiomas>h4{
+    margin: 0;
+    padding: 0.2%;
+
+    text-align: center;
+    text-decoration: underline;
+    font-size: 150%;
+    font-weight: bolder;
+    border-style: none;
+    color: blue;
+}
+
+#idiomas>ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    gap: 5px;
+    width: 120%;
+    border-color: black;
+    border-style: none;
+}
+
+#idiomas>ul>li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+    border-style: none;
+}
+
+#idiomas>ul>li>a{
+    padding: 1%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 90%;    
+    padding: 2%;
+    color: black;
+    border-style: none;
+}
+
+#idiomas>ul>li>a:hover{
+    background-color: rgb(228, 220, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#copy{
+    align-self: flex-end;
+    padding: 0.5%;
+    color: white;
+    margin: 0;
+    border-style: none;
+}
+
+@media (max-width: 800px){
+    #socialNetwork >li{
+        display: flex;
+        flex-direction: column;   
+
+    }   
+}
+
+@media (max-width: 400px){
+    #socialNetwork{
+        display: flex;
+        flex-direction: column;
+    }   
+    #faqs{
+        font-size: 50%;
+    }
+    #copy{
+        font-size: 50%;
+    }
+}

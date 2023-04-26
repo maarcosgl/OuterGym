@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(130, 126, 126);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    height: auto;
+    min-height: 90vh;
+}
+
+#actividades-group{
+    margin: 2%;
+    margin-top: 1%;
+    width: 96%;
+
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 2%;
+}
+
+.actividad{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+
+    position: relative;
+}
+
+.actividad img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.actividad article{
+    color: white;
+}
+
+.actividad:hover img{
+    transition: 1s;
+    filter: blur(5px);
+    transform: scale(1.5);
+}
+
+
+.actividad article{
+    position: absolute;
+    top: 60%;
+    width: 100%;    
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    cursor:default;
+}
+
+.actividad:hover article{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1.5s linear;
+}
+
+#terminosCondicionesUso{
+    margin: 0%;
+    padding: 0.5%;
+    padding-bottom: 3%;
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#terminosCondicionesUso h4{
+    padding: 0.3%;
+    text-align: center;
+    text-decoration: underline;
+    font-family:'Andale Mono', 'Courier', 'Courier New',monospace;
+    font-style: italic;
+    text-align: center;
+    font-size: 120%;    
+    font-weight: bolder;
+    color: white;
+    
+}
+#terminosCondicionesUso p{
+    padding: 0%;
+    margin: 0%;
+    width: 65%;
+    
+}
+
+
+
+@media (max-width: 1000px){
+    #actividades-group{
+        display: grid;
+        grid-template-columns:repeat(1,3fr);
+    }   
+}
+
+@media(max-width: 1000px){
+    main>h1{
+        font-size: 200%;
+    }
+}

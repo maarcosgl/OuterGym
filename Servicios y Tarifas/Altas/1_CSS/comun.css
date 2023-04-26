@@ -1,0 +1,60 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)),url("../0_IMG/fondo.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+main>.divCentrar{
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Avance{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 15%;
+    width: 50vw;
+}
+.circulo {
+    background: yellow;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.linea{
+    background: yellow;
+    width: 100px;
+    height: 1px;
+}
+#c{
+    border-style: solid;
+    border-color:blue;
+    border-width: 10px;
+}
+
+div{
+    color:aliceblue;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+p{
+    width: fit-content;
+    margin-top: 25px;
+    font-size: 150%;
+}

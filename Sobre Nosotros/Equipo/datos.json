@@ -1,0 +1,13 @@
+{
+    "marcos":{
+        "nombre": "MARCOS GARCÍA LAMAS",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus quos explicabo voluptatum, eos dolorum adipisci blanditiis minus facilis officia quibusdam delectus accusantium fuga maxime? At ratione numquam cumque laudantium?",
+        "imagen": "0_IMG/marcos.gif"
+    },
+
+    "angel":{
+        "nombre": "ÁNGEL GONZÁLEZ SANLÉS",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus quos explicabo voluptatum, eos dolorum adipisci blanditiis minus facilis officia quibusdam delectus accusantium fuga maxime? At ratione numquam cumque laudantium?",
+        "imagen": "0_IMG/angel.gif"
+    }
+}
