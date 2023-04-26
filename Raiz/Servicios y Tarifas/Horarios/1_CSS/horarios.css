@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(130, 126, 126);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    height: auto;
+
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    min-height: 90vh;   
+    
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)),url("../0_IMG/fondo.gif");
+    background-size: cover;
+    background-position: center center;
+}
+
+#posicionTabla{
+    width: 100%;
+    height: auto;
+    min-height: 74vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#contornoTabla{
+    justify-self: center;
+    margin: 1%;
+    padding: 2%;
+    width: 80%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    background-color: rgb(45, 45, 45);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tablaHorario{
+    width: 100%;
+    padding: 2%;
+    border-collapse: collapse;
+    color: white;
+}
+
+#tablaHorario caption{
+    font-size: 200%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: solid;
+    border-color: yellow;
+}
+
+
+.idColumna{
+    border-bottom: red;
+    color: yellow
+}
+
+.filaTabla{
+    border-color: red;
+    background-color: gray;
+    color: white;
+    
+
+
+}
+
+#tablaHorario th, td {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+#tablaHorario tr {
+    border-style:solid;
+    border-width:  2px; 
+    border-color: rgb(45, 45, 45);
+    padding: 10px;
+    text-align: left;
+  }
+
+#tablaHorario .idColumna th {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#tablaHorario .idColumna td {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#tablaHorario .filaTabla:nth-child(even) {
+    background-color: yellow;
+    color: black;
+}
+#tablaHorario .filaTabla:nth-child(even) th {
+    color: black;
+}
+#tablaHorario .filaTabla:nth-child(even) td {
+    color: black;
+}
+
+@media(max-width: 1000px){
+    main>h1{
+        font-size: 200%;
+    }
+    th{
+        font-size: 1.5vw;
+    }
+    td{
+        font-size: 1.5vw;
+    }
+}
+
+
+
+
+

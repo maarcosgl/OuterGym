@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(175, 174, 174);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)),url("../0_IMG/fondo.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+
+main>h1{
+    margin: 0%;
+    font-style: italic;
+    text-align: center;
+    font-size: 350%;
+    font-weight: bolder;
+    color: white;
+    width: 100%;
+    background-color: rgb(130, 126, 126);
+}
+
+main>.divCentrar{
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#formularioRegistro{
+    margin: 1%;
+    padding: 2%;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 10px;
+
+    background-color: rgba(63, 62, 62, 0.9);
+    border-radius: 10px;
+    
+}
+
+#formularioRegistro > input{
+    padding: 2%;
+    width: 100%;
+    
+    justify-self: center;
+    align-self: center;
+
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    background-color: transparent;
+    color: white;
+}
+
+#formularioRegistro > input::placeholder{
+    color: white;
+}
+
+
+textarea{
+    padding: 2%;
+    justify-self: center;
+    align-self: center;
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 550px;
+    max-width: 550px;
+    border-radius: 10px;
+}
+
+#formularioRegistro > #boton{
+    padding: 2%;
+    width: 100px;
+
+    text-align: center;
+    font-size: 100%;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+
+    border-style: none;
+    background-color:rgba(246, 255, 0, 1);   
+}
+
+#formularioRegistro > #boton:hover{
+    border-color: rgb(196, 190, 7);
+    background-color: rgb(196, 190, 7);
+    border-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#reiniciar{
+    padding: 2%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color:rgba(246, 255, 0, 1); 
+    border-style:none;
+    width: 30%;
+}
+
+#formularioRegistro > #reiniciar:hover{
+    background-color: rgb(239, 232, 9);
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+
+#privacidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#privacidad > label{
+    color: white;
+}
+
+
+@media(max-width: 1000px){
+    main>h1{
+        font-size: 200%;
+    }
+}

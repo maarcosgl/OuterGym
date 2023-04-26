@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(130, 126, 126);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    height: auto;
+}
+
+#img_one_group {
+    margin-top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)),url("../0_IMG/Inicio.gif");
+    background-size: cover;
+    background-position: center;
+}
+#img_one_group article {
+    margin: 5%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0.5%;
+    background-color:rgba(246, 255, 0, 0.2);  
+    border-radius: 5px;
+}
+#img_one_group article p{   
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+
+#img_two_group{
+    margin-top: 0;
+    padding: 2%;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-gap: 5%;
+    
+}
+
+#img_two_group > figure {
+    overflow: hidden;
+    display: flex ;
+    align-items: center;
+    align-self: center;
+
+    border-radius: 10px;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+#img_two_group > figure > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+
+#img_two_group article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#img_two_group > article > p{
+    color: white;
+
+    margin: 1%;
+    padding: 2%;
+    
+    background-color:rgba(11, 11, 11, 0.418);  
+    border-radius: 5px;
+}
+
+
+#terminosCondicionesUso{
+    margin: 0%;
+    padding: 0.5%;
+    padding-bottom: 3%;
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#terminosCondicionesUso h4{
+    padding: 0.3%;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    text-align: center;
+    font-size: 120%;    
+    font-weight: bolder;
+    color: white;
+    
+}
+#terminosCondicionesUso p{
+    padding: 0%;
+    margin: 0%;
+    width: 65%;
+    
+}
+
+#cajaCookies{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    position: absolute;
+    background-color: rgb(130, 126, 126);
+    width: 80vw;
+    height: 70vh;
+    border-radius: 5px;
+}
+
+#cookies{
+    margin-top: 10vh;
+    display: flex;
+    color: aliceblue;
+    text-align: center;
+}
+
+#aceptar{
+    background-color: yellow;
+    border-style: solid;
+    margin-top: auto;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 2vh;
+}
+
+@media(max-width: 1280px){
+    #img_two_group{
+        display: grid;
+        grid-template-columns:repeat(1, 2fr);
+    }
+    #img_two_group > figure {
+        justify-self: center;
+    }
+}
+
+

@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;    
+    height: 100%;
+}
+
+main{
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    height: auto;
+    min-height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)),url("../0_IMG/fondo.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#formulario{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formularioContacto{
+    margin: 1%;
+    padding: 2%;
+    width: auto;
+    height: auto;
+
+    max-height: 90%;
+
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 10px;
+
+    background-color: rgba(63, 62, 62, 0.9);
+    border-radius: 10px;
+    
+}
+
+#formularioContacto > input{
+    padding: 2%;
+    width: 100%;
+    
+    justify-self: center;
+    align-self: center;
+
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    background-color: transparent;
+    color: white;
+}
+
+#formularioContacto > input::placeholder{
+    color: white;
+}
+
+textarea{
+    padding: 2%;
+    justify-self: center;
+    align-self: center;
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 550px;
+    max-width: 550px;
+    border-radius: 10px;
+}
+
+#formularioContacto > .botones{
+    padding: 2%;
+    width: 100px;
+
+    text-align: center;
+    font-size: 100%;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+
+    border-style: none;
+    background-color:rgba(246, 255, 0, 1);  
+}
+
+#formularioContacto > .botones:hover{
+    border-color: rgb(231, 224, 6);
+    background-color: rgb(228, 220, 0);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#privacidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#privacidad > label{
+    color: white;
+}
+
+@media (max-width:650px){
+    textarea{
+        min-width: 250px;
+        max-width: 550px;
+    }
+}
+
+@media(max-width: 1000px){
+    main>h1{
+        font-size: 200%;
+    }
+}
